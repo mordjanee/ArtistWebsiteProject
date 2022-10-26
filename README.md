@@ -1,3 +1,0 @@
-# ArtistWebsiteProject
-
-to fill
