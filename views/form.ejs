@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find an artist</title>
+        <link rel="stylesheet" type="text/css" href="\public\style.css">
+        
+    </head>
+
+
+    <body>
+        <img class="im" src="\public\image.jpg">
+
+        <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li style="float:right"><a class="login" href="login">Login</a></li>
+        </ul>
+        <br><br>  
+        <div class="rform"><h1>Find an artist</h1>
+        <input id="searchbar" onkeyup="search_artist(this)" type="text" name="search" placeholder="Search artists.."> <!-- I added 'this' on the function-->
+        <section id="searchResults">
+            <h2><%=test%></h2>
+        </section> 
+        <br>
+
+        <script>
+            function search_artist(e){
+                const searchResults = document.getElementById('searchResults');
+                fetch('getPeople', {
+                    method: 'Post',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({payload: e.value})
+                });
+
+            }
+            
+            </script>
+
+
+
+
+    </body>
+</html>

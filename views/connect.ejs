@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Administrator</title>
+        <link rel="stylesheet" type="text/css" href="\public\style.css">
+        
+    </head>
+
+
+    <body>
+      <ul>
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li style="float:right"><a class="login" href="login">Login</a></li>
+    </ul>
+        <br><br>  
+        <div class="title"><h1>Administrator</h1></div>
+
+        <div class="table-responsive-sm">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Art</th>
+                    <th>Description</th>
+                <th class="d-print-none">
+                    <a class="btn btn-sm btn-success" href="/create">Add</a>
+                  </th>
+                </tr><!--
+              </thead>
+              <tbody>
+                <% for (const artists of model) { %>
+                  <tr>
+                    <td><%= artists.name %></td>
+                    <td><%= artists.art %></td>
+                    <td><%= artists.description %></td>
+                    <td class="d-print-none">
+                      <a class="btn btn-sm btn-warning" href="/edit/<%= artist.name_id %>">Edit</a>
+                      <a class="btn btn-sm btn-danger" href="/delete/<%= artist.name_id %>">Delete</a>
+                    </td>
+                  </tr>
+                <% } %>
+              </tbody> -->
+            </table>
+          </div>
+        
+    </body>
+</html>
+
+

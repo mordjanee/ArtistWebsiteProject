@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Administrator</title>
+        <link rel="stylesheet" type="text/css" href="\public\style.css">
+        
+    </head>
+
+
+    <body>
+        <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li style="float:right"><a class="login" href="login">Login</a></li>
+        </ul>
+        <br><br>     
+        <div class="title"><h1>Administrator</h1></div>
+
+        <form id="login" method="post" >
+            <div id="admin">
+                <h2 class="name">Mail</h2>
+                <br> 
+                <input class="mail" id ="mail" type="text" required name="mail" placeholder="xyz@mail.com" size="40"><br>
+                <h2 class="name">Password</h2>
+                <br>
+                <input class="password" id="password" type="text" required name="password" placeholder="xxxxxx" size="40"><br>
+                <br><br>
+                <button type="submit" formaction='/connect' id="connection" style="vertical-align:middle"><span>Connection </span></button>
+                <br><br>
+                <a href="\public\newPWD.ejs">Forgot password</a>
+                
+        </div>  
+        </form>
+
+        
+
+    </body>
+</html>
